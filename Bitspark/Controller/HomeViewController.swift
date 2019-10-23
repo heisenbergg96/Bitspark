@@ -15,16 +15,18 @@ class HomeViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "My wallet"
-        navigationController?.navigationBar.prefersLargeTitles = true
+        if #available(iOS 11.0, *) {
+            navigationController?.navigationBar.prefersLargeTitles = true
+        }
         setupCollectionView()
     }
     
     func setupCollectionView() {
         
         collectionView.backgroundColor = UIColor(red: 214/255, green: 219/255, blue: 240/255, alpha: 1)
-        
         collectionView.register(HomeCell.self, forCellWithReuseIdentifier: homeCellId)
         collectionView.contentInset = UIEdgeInsets(top: 20, left: 20, bottom: 0, right: 20)
+        collectionView.showsVerticalScrollIndicator = false
         
     }
 }
@@ -45,12 +47,10 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: homeCellId, for: indexPath) as? HomeCell else {
             return UICollectionViewCell()
         }
-//        cell.backgroundColor = .red
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        
-        return CGSize(width: collectionView.frame.width - 40, height: 150)
+        return CGSize(width: collectionView.frame.width - 40, height: 170)
     }
 }

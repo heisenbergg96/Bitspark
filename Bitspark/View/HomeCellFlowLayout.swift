@@ -20,7 +20,7 @@ class HomeCellLayout: UICollectionViewFlowLayout {
     
     override init() {
         super.init()
-        minimumLineSpacing = 20
+        minimumLineSpacing = 30
     }
     
     required init?(coder aDecoder: NSCoder) {

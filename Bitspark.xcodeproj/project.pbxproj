@@ -14,7 +14,6 @@
 		DF216A2622DEE9D100CAC372 /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF216A2522DEE9D100CAC372 /* CellView.swift */; };
 		DF7BC4CD22DF177A008D6808 /* UIviewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7BC4CC22DF1779008D6808 /* UIviewExtension.swift */; };
 		DF7BC4CF22DF1BA1008D6808 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7BC4CE22DF1BA1008D6808 /* HomeCell.swift */; };
-		DF7BC4D122DF20D5008D6808 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7BC4D022DF20D5008D6808 /* ShadowView.swift */; };
 		DF7BC4D322DF2922008D6808 /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7BC4D222DF2922008D6808 /* TitleView.swift */; };
 		DF7BC4D522DF2FE1008D6808 /* HomeCellFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7BC4D422DF2FE1008D6808 /* HomeCellFlowLayout.swift */; };
 		DF7BC4D822DF5C2B008D6808 /* Wallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7BC4D722DF5C2B008D6808 /* Wallet.swift */; };
@@ -30,7 +29,6 @@
 		DF216A2522DEE9D100CAC372 /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
 		DF7BC4CC22DF1779008D6808 /* UIviewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIviewExtension.swift; sourceTree = "<group>"; };
 		DF7BC4CE22DF1BA1008D6808 /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
-		DF7BC4D022DF20D5008D6808 /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 		DF7BC4D222DF2922008D6808 /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
 		DF7BC4D422DF2FE1008D6808 /* HomeCellFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCellFlowLayout.swift; sourceTree = "<group>"; };
 		DF7BC4D722DF5C2B008D6808 /* Wallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wallet.swift; sourceTree = "<group>"; };
@@ -83,7 +81,6 @@
 			children = (
 				DF216A2522DEE9D100CAC372 /* CellView.swift */,
 				DF7BC4CE22DF1BA1008D6808 /* HomeCell.swift */,
-				DF7BC4D022DF20D5008D6808 /* ShadowView.swift */,
 				DF7BC4D222DF2922008D6808 /* TitleView.swift */,
 				DF7BC4D422DF2FE1008D6808 /* HomeCellFlowLayout.swift */,
 			);
@@ -184,7 +181,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF7BC4D122DF20D5008D6808 /* ShadowView.swift in Sources */,
 				DF216A1522DEE31500CAC372 /* HomeViewController.swift in Sources */,
 				DF7BC4D522DF2FE1008D6808 /* HomeCellFlowLayout.swift in Sources */,
 				DF216A1322DEE31500CAC372 /* AppDelegate.swift in Sources */,
@@ -333,11 +329,12 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 849UP4BSN8;
 				INFOPLIST_FILE = Bitspark/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = Ymedia.Bitspark;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "IndiaDev*";
@@ -353,11 +350,12 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 849UP4BSN8;
 				INFOPLIST_FILE = Bitspark/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = Ymedia.Bitspark;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "IndiaDev*";
